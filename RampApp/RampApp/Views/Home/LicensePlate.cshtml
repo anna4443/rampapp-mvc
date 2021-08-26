@@ -1,0 +1,29 @@
+﻿@model RampApp.LicencePlate
+
+@{
+    ViewBag.Title = "LicensePlate";
+}
+
+<h2>License plate</h2>
+
+@{
+    if (Model == null)
+    {
+        <div>
+            There is no licence plate
+        </div>
+    }
+
+    else
+    {
+        <div>
+            Licence plate @Model.Value exists
+        </div>
+    }
+}
+
+
+
+
+
+
